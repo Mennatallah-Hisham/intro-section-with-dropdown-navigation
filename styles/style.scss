@@ -4,11 +4,17 @@
 
 
 .hero{
-    border:1px solid green;
+  
     @include flex-col();
     gap:1rem;
 
     @include breakpoint('m'){
+        &__img,
+        &__picture{
+            height:50vh;
+        }
+    }
+    @include breakpoint('l'){
         @include flex();
         flex-direction: row-reverse;
         gap:4rem;

@@ -1,13 +1,25 @@
 .btn--filled{
-    padding:1rem 2rem;
+    color:#fff;
     background-color: #000;
-    border-radius: 1rem;
+ 
     font-size: 1.4rem;
+    border:1px solid #000;
+    &:hover{
+        background-color: #fff;
+        color:#000;
+    }
 
     
 }
-
+.btn--outline{
+    border:1px solid #000;
+    color:#000;
+}
+.btn,
 .btn:link,
 .btn:visited{
-color:#fff;
+
+padding:1rem 2rem;
+border-radius: 1rem;
+cursor: pointer;
 }

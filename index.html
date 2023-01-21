@@ -20,21 +20,24 @@
     <main>
         <header class="header">
             <img class="logo" src="images/logo.svg" alt="snap logo"/>
-            <button class="toggle-btn">
+            <button class="toggle-btn mobile-view__open">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 btn-icon">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
                   </svg>
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 btn-icon hide">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-                  </svg>
+                 
                   
                   
             </button>
             <nav class="main-nav">
+                <button class="mobile-view__close">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 btn-icon ">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                      </svg>
+                </button>
                 <ul class="main-nav__list">
                     <li class="main-nav__list__item">features
-                        <ul class="sub-list">
-                            <li class="sub-list__item">
+                        <ul class="sub-list ">
+                            <li class="sub-list__item ">
                                
                                     <img 
                                     class="sub-list__item__icon"
@@ -90,7 +93,7 @@
                         </ul>
                     </li>
                     <li class="main-nav__list__item">company
-                        <ul class="sub-list">
+                        <ul class="sub-list ">
                            
                             <li class="sub-list__item">
                                
@@ -132,7 +135,7 @@
                         <a class="btn">login</a>
                     </li>
                     <li class="main-nav__list__item">
-                        <a class="btn btn--outline">login</a>
+                        <a class="btn btn--outline">register</a>
                     </li>
                 </ul>
             </nav>
@@ -205,6 +208,7 @@
            
         </section>
     </main>
+    <script src="script.js"></script>
     
 </body>
 </html>
