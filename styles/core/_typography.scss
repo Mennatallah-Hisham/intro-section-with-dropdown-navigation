@@ -1,0 +1,39 @@
+@use "../abstracts" as *;
+@mixin txtRest(){
+
+text-align: center;
+
+.p::first-letter{
+    text-transform: capitalize;
+}
+}
+
+h1{
+    font-size:3rem;
+    text-transform:capitalize;
+    line-height: 1.2;
+    letter-spacing: 0.2rem;
+    text-align: center;
+ 
+}
+
+p{
+    @include txtRest();
+    font-size:1.4rem;
+    width:90%;
+    max-width: 50rem;
+    margin-inline: auto;
+}
+
+@include breakpoint('m'){
+    h1,p{
+        text-align: left;
+    }
+    h1{
+        font-size: 5rem;
+    }
+    p{
+        font-size: 1.6rem;
+    }
+}
+

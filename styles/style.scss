@@ -1,0 +1,39 @@
+@use 'abstracts' as  *;
+@forward 'core';
+@forward 'components';
+
+
+.hero{
+    border:1px solid green;
+    @include flex-col();
+    gap:1rem;
+
+    @include breakpoint('m'){
+        @include flex();
+        flex-direction: row-reverse;
+        gap:4rem;
+     
+        &__img,
+        &__picture{
+            height:calc(100vh - 8rem);
+        }
+
+    }
+
+    
+}
+
+.hero__content{
+margin-top:1.5rem;
+    @include flex-col();
+
+}
+
+.clients__list__item img{
+ 
+    width:6rem;
+
+    @include breakpoint('m'){
+        width:8rem;
+    }
+}

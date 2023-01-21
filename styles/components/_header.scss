@@ -1,0 +1,18 @@
+
+@use '../abstracts/index' as *;
+.header{
+
+    @include flex();
+    justify-content: space-between;
+    padding:1rem 2rem;
+    margin-bottom: 5rem;
+
+    @include breakpoint('m'){
+        padding:2rem;
+        margin-bottom: 0rem;
+    }
+}
+
+.main-nav{
+    display: none;
+}
